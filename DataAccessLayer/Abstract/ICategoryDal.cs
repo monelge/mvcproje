@@ -4,16 +4,9 @@ using EntityLayer.Concrete;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface ICategoryDal
+    public interface ICategoryDal:IRepostories<Category>
     {
-        //CRUD
-        List<Category> List();
-
-        void Insert(Category p);
-
-        void Update(Category p);
-
-        void Delete(Category p);
+        
 
     }
 }

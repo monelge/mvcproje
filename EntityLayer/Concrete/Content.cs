@@ -1,9 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace EntityLayer.Concrete
 {
     public class Content
     {
+        [Key]
         public int ContentId { get; set; }
+        [StringLength(100)]
         public string ContentValue { get; set; }
         public DateTime ContentDate { get; set; }
 

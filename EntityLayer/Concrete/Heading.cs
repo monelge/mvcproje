@@ -1,9 +1,13 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace EntityLayer.Concrete
 {
     public class Heading
     {
+        [Key]
         public int HeadingID { get; set; }
+        [StringLength(200)]
         public string HeadingName { get; set; }
         public DateTime HeadingDate { get; set; }
 
